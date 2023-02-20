@@ -2,6 +2,12 @@ window.addEventListener('load', () => {
 	const canvas = document.getElementById('canvas1');
 	const ctx = canvas.getContext('2d');
 
+	setTimeout(() => {
+		canvas.classList.add('bg');
+		console.log('Записываем фон');
+
+	}, 1000);
+
 	canvas.width = 1280;
 	canvas.height = 720;
 
